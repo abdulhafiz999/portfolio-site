@@ -20,9 +20,23 @@ body{
   background-image: url(Images/pic_1.jpg);
   background-size: cover;
   background-position: center;
-
+  border-radius: 10px;
+  
 }
 
+#header:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
+#header:background-image{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, opacity 0.3s;
+  mix-blend-mode: luminosity;
+}
+
+#header:background-image:hover{
+  mix-blend-mode: normal;
+}
 .container{
   padding: 10px 10%;
 
@@ -92,6 +106,7 @@ nav ul li a:hover::after{
   color: #ababab;
 }
 
+
 .row{
   display: flex;
   justify-content: space-between;
@@ -105,10 +120,24 @@ nav ul li a:hover::after{
 .about-col-1 img{
   width: 100%;
   border-radius: 15px;
+  margin-left: 35px;
 }
 
 .about-col-2{
   flex-basis: 60%;
+}
+
+.about-col-1 img{  
+  height: auto;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  mix-blend-mode: luminosity;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.about-col-1 img:hover{
+  mix-blend-mode: normal;
 }
 .sub-title{
   font-size: 60px;
@@ -289,13 +318,45 @@ display: none;
   padding: 14px 50px;
   border-radius: 10px;
   text-decoration: none;
-  color: white;
-  transition: background 0.5s; 
+  color: rgb(152, 14, 14);
+  transition: background 0.5s;
 }
 
 .btn:hover{
   background: #ff004f;
   transition: transform 0.5s;
+}
+
+.btn.btn4{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(182, 25, 25);
+  transition: background 0.5s;
+  margin-left: 13px;
+  background-color: #080808;
+}
+
+.btn.btn4:hover{
+  background: #ff004f;
+  transition: transform 0.5s;
+  color: #fff;
+}
+.btn.btn3{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(182, 25, 25);
+  transition: background 0.5s;
+  margin-left: 13px;
 }
 
 /* .........contact.......... */
@@ -401,8 +462,14 @@ form btn2{
   }
 
   nav .fa-solid{
-    display: block;
+    display: inline;
     font-size: 25px;
+    top: 0;
+    right: 0; /* Move the nav bar to the right side */
+    width: 100%; 
+    padding: 1rem;
+    z-index: 999; /* Ensure it stays on top of other content */
+    
   }
 
   nav ul{
