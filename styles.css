@@ -25,10 +25,10 @@ body{
   
 }
 
-#header:hover {
+/* #header:hover {
   transform: scale(1.05);
   opacity: 0.8;
-}
+} */
 #header:background-image{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s, opacity 0.3s;
@@ -326,6 +326,7 @@ display: none;
 .btn:hover{
   background: #ff004f;
   transition: transform 0.5s;
+  color: white;
 }
 
 .btn.btn4{
@@ -402,6 +403,12 @@ display: none;
   background: black;
 }
 
+/* .mycv{
+ margin: 50px auto;
+ width: fit-content;
+} */
+
+ 
 .btn.btn.btn2:hover{
   background: #ff004f;
 
