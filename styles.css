@@ -323,6 +323,24 @@ display: none;
   transition: background 0.5s;
 }
 
+.btn7{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgb(152, 14, 14);
+  transition: background 0.5s;
+  margin-left: 11px;
+}
+
+.btn7:hover{
+  background: #ff004f;
+  transition: transform 0.5s;
+  color: white;
+}
 .btn:hover{
   background: #ff004f;
   transition: transform 0.5s;
@@ -481,11 +499,24 @@ form btn2{
     display: inline;
     font-size: 25px;
     top: 0;
-    right: 0; /* Move the nav bar to the right side */
+    right: 0; /*Move the nav bar to the right side*/
     width: 100%; 
     padding: 1rem;
     z-index: 999; /* Ensure it stays on top of other content */
+     
+  }
+
+  .logo{
+    margin-left: 2px;
+    size: 50px;
     
+
+  }
+  .fa-bars{
+      position: absolute;
+    right: 20px;
+    top: 20px;
+    margin-left: 58px;
   }
 
   #image{
