@@ -46,8 +46,10 @@ nav {
   flex-wrap: wrap;
 }
 
-.logo4 {
+.logo {
+  display: flex;
   width: 140px;
+  margin-left: 0%;
 }
 
 nav ul li {
@@ -56,9 +58,9 @@ nav ul li {
   margin: 10px 20px;
 }
 
-nav img {
+/* nav img {
   position: 10%;
-}
+} */
 
 nav ul li a {
   color: #fff;
@@ -133,6 +135,7 @@ nav ul li a:hover::after {
 
 .about-col-1 img:hover {
   mix-blend-mode: normal;
+  
 }
 .sub-title {
   font-size: 60px;
@@ -469,38 +472,48 @@ nav .fa-solid {
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(Images/pic_2.jpg);
+    overflow-x: hidden;
   }
   .header-text {
     margin-top: 90%;
     font-size: 16px;
     margin-right: 20px;
-    font-size: 9px;
+    font-size: 10px;
   }
   #hafiz {
-    font-size: 24px;
+    font-size: 22px;
     color: white;
+    
+  }
+
+  .ui {
+    margin-top: 20px;
   }
   .header-text h1 {
-    font-size: 30px;
+    font-size: 25px;
+    margin-left: -16px;
   }
 
   .fa-solid {
-    margin-right: 0;
+    display: flex;
+    margin-left: 290px;
   }
   nav .fa-solid {
-    display: inline;
+    display: flex;
     font-size: 25px;
     top: 0;
     right: 0; /*Move the nav bar to the right side*/
     width: 100%;
     padding: 1rem;
     z-index: 999; /* Ensure it stays on top of other content */
+    margin-right: 0px;
   }
 
   .logo {
     margin-left: 2px;
     size: 200px;
     margin-right: 50px;
+    margin-top: 20px;
   }
   
   nav .fa-bars {
