@@ -16,11 +16,15 @@ function opentab(tabname){
 var sidemenu = document.getElementById("sidemenu");
 
 function openmenu(){
-  sidemenu.style.right = "0";
+  sidemenu.style.right = "0"; // show the menu
+  document.querySelector(".fa-bars").style.display = "none"; // hide hamburger
+  document.querySelector(".fa-times").style.display = "block"; // show close icon
 }
 
 function closemenu(){
-  sidemenu.style.right = "-100px";
+    sidemenu.style.right = "-200px"; // hide the menu
+  document.querySelector(".fa-bars").style.display = "block"; // show hamburger
+  document.querySelector(".fa-times").style.display = "none"; // hide close icon
 }
 
 // Add event listeners for mobile menu toggle

@@ -498,6 +498,9 @@ nav .fa-solid {
     display: flex;
     margin-left: 290px;
   }
+  .fa-times {
+  display: none;
+}
   nav .fa-solid {
     display: flex;
     font-size: 25px;
