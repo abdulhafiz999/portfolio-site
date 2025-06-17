@@ -135,7 +135,6 @@ nav ul li a:hover::after {
 
 .about-col-1 img:hover {
   mix-blend-mode: normal;
-  
 }
 .sub-title {
   font-size: 60px;
@@ -483,7 +482,6 @@ nav .fa-solid {
   #hafiz {
     font-size: 22px;
     color: white;
-    
   }
 
   .ui {
@@ -494,22 +492,9 @@ nav .fa-solid {
     margin-left: -16px;
   }
 
-  .fa-solid {
-    display: flex;
-    margin-left: 290px;
-  }
-  .fa-times {
-  display: none;
-}
   nav .fa-solid {
-    display: flex;
+    display: block;
     font-size: 25px;
-    top: 0;
-    right: 0; /*Move the nav bar to the right side*/
-    width: 100%;
-    padding: 1rem;
-    z-index: 999; /* Ensure it stays on top of other content */
-    margin-right: 0px;
   }
 
   .logo {
@@ -518,13 +503,14 @@ nav .fa-solid {
     margin-right: 50px;
     margin-top: 20px;
   }
-  
+
   nav .fa-bars {
-  margin-right: auto;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-}
+    margin-right: auto;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+  }
 
   #image {
     align-items: center;
