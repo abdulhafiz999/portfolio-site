@@ -509,8 +509,9 @@ nav .fa-solid {
     font-size: 24px;
     color: white;
     cursor: pointer;
-    margin-left: 10px;
-  }
+    margin-left: 170px;
+    margin-top: auto;
+   }
 
   #image {
     align-items: center;
