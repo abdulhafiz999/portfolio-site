@@ -599,3 +599,9 @@ nav .fa-solid {
   background-color: yellow;
   color: black;
 }
+#social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  margin-top: 5px;
+}
