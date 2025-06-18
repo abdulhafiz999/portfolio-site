@@ -553,12 +553,12 @@ nav .fa-solid {
   /* .about-col-1, */
   .about-col-2 {
     flex-basis: 100%;
-    text-align: justify;
+    text-align:  justify;
     margin-left: 12px;
     margin-right: 12px;
     flex-basis: 80%;
     padding-left: 40px;
-    padding-right: 20px;
+    padding-right: 2px;
    }
 
   .about-col-1 {
