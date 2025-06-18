@@ -111,10 +111,12 @@
             <div class="tab-contents" id="education">
               <ul>
                 <li>
-                  <span>2022</span><br />UI/UX Design Training at ET Institute
+                  <span>2024-present</span><br />Hackerboost Develeper Hub
                 </li>
-                <li><span>2023</span><br />Bsc. Computer from UDS</li>
-                <li><span>2024</span><br />BBA from ISM Ghana</li>
+                <li><span>2023-present</span><br />Bsc. Computer from UDS</li>
+                <li>
+                  <span>2019-2022</span><br />Ghana Senior High School, Tamale
+                </li>
               </ul>
             </div>
           </div>
@@ -274,5 +276,25 @@
         </p>
       </div>
     </div>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwgkNdhuYSX3y1IT4yZAqPyAwcnsJ7fWsa6vFdRGkVbaZhjG0ZSwHLeBN58q3Q_ove8/exec";
+      const form = document.forms['submit-to-google-sheet'];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        message.innerHTML = "Message Sending...";
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            msg.innerHTML = "Messsage Sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
