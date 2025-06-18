@@ -603,5 +603,6 @@ nav .fa-solid {
   display: flex;
   justify-content: center;
   align-items: left;
-  margin-top: 5px;
-}
+  margin-top: 10px;
+  margin-left: -120px;
+  }
