@@ -574,6 +574,13 @@ nav .fa-solid {
   }
 }
 
+#image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #msg {
   color: #61b752;
   margin-top: -40px;
