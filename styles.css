@@ -550,17 +550,23 @@ nav .fa-solid {
     font-size: 40px;
   }
 
-  .about-col-1,
+  /* .about-col-1, */
   .about-col-2 {
     flex-basis: 100%;
     text-align: justify;
     margin-left: 12px;
     margin-right: 12px;
+    flex-basis: 80%;
+    padding-left: 40px;
+    padding-right: 20px;
    }
 
   .about-col-1 {
     margin-bottom: 30px;
     margin-right: 20px;
+    flex-basis: 90%;
+    padding-left:  20px;
+    padding-right: 20px;
   }
 
   .about-col-2 {
