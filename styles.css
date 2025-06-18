@@ -472,6 +472,7 @@ nav .fa-solid {
   #header {
     background-image: url(Images/pic_2.jpg);
     overflow-x: hidden;
+    background-size: cover;
   }
   .header-text {
     margin-top: 90%;
