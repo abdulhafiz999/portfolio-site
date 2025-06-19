@@ -41,24 +41,26 @@
         </nav>
 
         <div class="header-text">
-          <p class="ui">UI/UX Designer</p>
+          <p class="ui">Software Develpor</p>
           <h1 class="myname">
             Hi, I'm <span>Abdul</span><br /><span id="hafiz">
               Hafiz from Ghana</span
             >
           </h1>
-          <div class="social-icons" id="social-icons">
-              <a href="https://web.facebook.com/addul.hafiz.1"
-                ><i class="fa-brands fa-facebook"></i
-              ></a>
-              <a href="https://x.com/Abdul_Hafiz13"
-                ><i class="fa-brands fa-twitter-square"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/abdul-hafiz-abdul-razak-9363482a1/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href=""><i class="fa-brands fa-instagram"></i></a>
-            </div>
+          <div class="social-icons" id="social-icon">
+            <a href="https://web.facebook.com/addul.hafiz.1"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="https://x.com/Abdul_Hafiz13"
+              ><i class="fa-brands fa-twitter-square"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/abdul-hafiz-abdul-razak-9363482a1/"
+            >
+              <i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
       </div>
     </div>
@@ -254,7 +256,8 @@
               <a href="https://x.com/Abdul_Hafiz13"
                 ><i class="fa-brands fa-twitter-square"></i
               ></a>
-              <a href="https://www.linkedin.com/in/abdul-hafiz-abdul-razak-9363482a1/"
+              <a
+                href="https://www.linkedin.com/in/abdul-hafiz-abdul-razak-9363482a1/"
                 ><i class="fa-brands fa-linkedin"></i
               ></a>
               <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -289,15 +292,16 @@
       </div>
     </div>
     <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbwgkNdhuYSX3y1IT4yZAqPyAwcnsJ7fWsa6vFdRGkVbaZhjG0ZSwHLeBN58q3Q_ove8/exec";
-      const form = document.forms['submit-to-google-sheet'];
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwgkNdhuYSX3y1IT4yZAqPyAwcnsJ7fWsa6vFdRGkVbaZhjG0ZSwHLeBN58q3Q_ove8/exec";
+      const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
 
-      form.addEventListener('submit', e => {
+      form.addEventListener("submit", (e) => {
         e.preventDefault();
         message.innerHTML = "Message Sending...";
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-          .then(response => {
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
             msg.innerHTML = "Messsage Sent successfully";
             setTimeout(function () {
               msg.innerHTML = "";

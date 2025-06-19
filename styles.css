@@ -25,6 +25,7 @@ body {
   border-radius: 10px;
 }
 
+ 
 /* #header:hover {
   transform: scale(1.05);
   opacity: 0.8;
@@ -610,5 +611,5 @@ nav .fa-solid {
   justify-content: center;
   align-items: left;
   margin-top: 10px;
-  margin-left: -120px;
+  margin-left: -10px;
   }
