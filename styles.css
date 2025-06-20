@@ -59,13 +59,8 @@ body {
 nav {
   display: flex;
   align-items: center;
-  /* position: fixed; */
-  /* top: 0;
-  left: 0; */
   justify-content: space-between;
   flex-wrap: wrap;
-  /* padding: 10px 0; */
-  /* margin-left: 130px;    */
 }
 
 .logo {
@@ -503,9 +498,9 @@ nav .fa-solid {
     font-size: 10px;
   }
 
-  .logo{
+  /* .logo{
     position: fixed;
-  }
+  } */
   #hafiz {
     font-size: 22px;
     color: white;
