@@ -529,7 +529,7 @@ nav .fa-solid {
   }
 
   nav .fa-bars {
-    margin-right: auto;
+    /* margin-right: auto; */
     font-size: 24px;
     color: white;
     cursor: pointer;
