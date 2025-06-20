@@ -1,3 +1,17 @@
+:root {
+  --primary: #ff004f;
+  --bg-dark: #080808;
+  --text-light: #ffffff;
+  --text-muted: #ababab;
+  --text-accent: #b54769;
+  --bg-card: #262626;
+  --btn-text-muted:rgb(34, 7, 157);
+  --btn-text-strong: #b61919;
+  --success: #61b752;
+  --icon-muted: #ae8d8d;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -45,15 +59,20 @@ body {
 nav {
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 10px 0;
+  margin-left: 130px;   
 }
 
 .logo {
   display: flex;
   width: 140px;
   margin-left: 0%;
-}
+ }
 
 nav ul li {
   display: inline-block;
@@ -269,7 +288,7 @@ nav ul li a:hover::after {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  background: linear-gradient(rgba(0, 0, 0, 0.6),rgb(43, 11, 205));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -482,6 +501,10 @@ nav .fa-solid {
     font-size: 16px;
     margin-right: 20px;
     font-size: 10px;
+  }
+
+  .logo{
+    position: fixed;
   }
   #hafiz {
     font-size: 22px;
