@@ -624,10 +624,10 @@ nav .fa-solid {
   background-color: yellow;
   color: black;
 }
-#social-icons{
+#social-icon{
   display: flex;
   justify-content: center;
   align-items: left;
   margin-top: 10px;
-  margin-left: -10px;
+  margin-left: -85px;
   }
