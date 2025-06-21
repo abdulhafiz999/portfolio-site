@@ -1,7 +1,7 @@
 :root {
   --primary: #ff004f;
   --bg-dark: #080808;
-  --text-light: #ffffff;
+  --text-light:rgb(237, 217, 217);
   --text-muted: #ababab;
   --text-accent: #b54769;
   --bg-card: #262626;
