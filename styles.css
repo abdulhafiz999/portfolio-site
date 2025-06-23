@@ -654,6 +654,7 @@ nav .fa-solid {
   color: var(--success);
   margin-top: -40px;
   display: block;
+  margin-right: 40px;
 }
 
 .highlight {
