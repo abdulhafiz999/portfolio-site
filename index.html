@@ -29,7 +29,7 @@
       function closemenu() {
         document.getElementById("sidemenu").style.right = "-200px";
       }
-    </script> 
+    </script>
   </head>
 
   <body>
@@ -269,7 +269,9 @@
                 href="mailto:abdulhafiz99888@gmail.com
 
 "
-                target="_blank" class="contact_id" >abdulhafiz99888@gmail.com
+                target="_blank"
+                class="contact_id"
+                >abdulhafiz99888@gmail.com
               </a>
             </p>
             <p>
@@ -311,7 +313,7 @@
                 rows="6"
                 placeholder="your message"
               ></textarea>
-              <button type="submit" class="btn btn4">submit</button>
+              <button type="submit" class="btn btn4" id="submit">submit</button>
             </form>
             <span id="msg"></span>
           </div>
@@ -329,13 +331,12 @@
 
     <script>
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwgkNdhuYSX3y1IT4yZAqPyAwcnsJ7fWsa6vFdRGkVbaZhjG0ZSwHLeBN58q3Q_ove8/exec";
+        "https://script.google.com/macros/s/AKfycbziHC8eCRU8rU0kIPYdgg4sgAbrWKPomwqo6EnwnxTHL_7Vu2vbeFYmv60A-Wo6v5J1/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
-
       form.addEventListener("submit", (e) => {
         e.preventDefault();
-        message.innerHTML = "Message Sending...";
+        msg.innerHTML = "Message Sending...";
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
             msg.innerHTML = "Messsage Sent successfully";
