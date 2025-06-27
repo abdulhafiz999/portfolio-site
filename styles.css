@@ -63,10 +63,23 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; 
-  position: fixed; 
-  top: 25px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  position: fixed; /* Make nav sticky */
+  position: sticky; 
+  padding: 0 20px;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  z-index: 1000; /* Ensure nav is above other content */
  }
+
+#navbar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  /* justify-content: space-between; */
+  width: 100%;
+}
 
 nav.scrolled {
   background-color: var(--primary);
@@ -85,9 +98,6 @@ nav ul li {
   margin: 10px 20px;
 }
 
-/* nav img {
-  position: 10%;
-} */
 
 nav ul li a {
   color: #fff;
@@ -540,7 +550,7 @@ nav .fa-solid {
   justify-content: space-between;
   flex-wrap: wrap; 
   /* position: fixed;  */
-  top: 25px;
+  top: 0;
  }
   nav .fa-solid {
     display: block;
@@ -551,7 +561,7 @@ nav .fa-solid {
     margin-left: 2px;
     size: 200px;
     margin-right: 50px;
-    margin-top: 20px;
+    margin-top: auto;
   }
 
   nav .fa-bars {
@@ -567,6 +577,7 @@ nav .fa-solid {
       position: relative;
       margin-left: 120px;
       /* margin-top: 10px; */
+      margin-top: 40px;
   }
 
   #image {
