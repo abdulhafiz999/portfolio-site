@@ -50,3 +50,14 @@ function closemenu() {
 //     })
 //     .catch((error) => console.error("Error!", error.message));
 // });
+
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+  const header = document.getElementById("header");
+
+  if (window.scrollY > header.offsetHeight) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+});
