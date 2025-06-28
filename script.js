@@ -61,3 +61,10 @@ window.addEventListener("scroll", function () {
     navbar.classList.remove("sticky");
   }
 });
+
+document.getElementById('logo').addEventListener('click', function() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+})
+})
