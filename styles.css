@@ -587,7 +587,7 @@ nav .fa-solid {
   }
 
   nav ul {
-    background: var(--primary);
+    background: rgba(231, 7, 7, 0.6);
     position: fixed;
     top: 0;
     right: -200px;
