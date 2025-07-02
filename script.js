@@ -27,29 +27,7 @@ function closemenu() {
   document.querySelector(".fa-times").style.display = "none"; // hide close icon
 }
 
-// Add event listeners for mobile menu toggle
-// document.querySelector(".fa-bars").addEventListener("click", openmenu);
-// document.querySelector(".fa-times").addEventListener("click", closemenu);
-
-// const scriptURL =
-//   "https://script.google.com/macros/s/AKfycbwgkNdhuYSX3y1IT4yZAqPyAwcnsJ7fWsa6vFdRGkVbaZhjG0ZSwHLeBN58q3Q_ove8/exec";
-// const form = document.forms["submit-to-google-sheet"];
-// const msg = document.getElementById("msg");
-
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   message.innerHTML = "Message Sending...";
-//   fetch(scriptURL, { method: "POST", body: new FormData(form) })
-//     .then((response) => {
-//       msg.innerHTML = "Messsage Sent successfully";
-//       setTimeout(function () {
-//         msg.innerHTML = "";
-//       }, 5000);
-
-//       form.reset();
-//     })
-//     .catch((error) => console.error("Error!", error.message));
-// });
+ 
 
 window.addEventListener("scroll", function () {
   const navbar = document.getElementById("navbar");
