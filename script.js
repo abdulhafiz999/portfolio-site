@@ -15,6 +15,8 @@ function opentab(tabname) {
 
 var sidemenu = document.getElementById("sidemenu");
 
+
+//function to close and open the nav bar
 function openmenu() {
   sidemenu.style.right = "0"; // show the menu
   document.querySelector(".fa-bars").style.display = "none"; // hide hamburger
