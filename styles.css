@@ -543,8 +543,18 @@ nav .fa-solid {
     font-size: 10px;
   }
   .header-text h1 {
-    font-size: 25px;
+    font-size: 30px;
     margin-left: -16px;
+  }
+
+  .header-text p {
+    font-size: 20px;
+    margin-left: -16px;
+  }
+
+  .header-text {
+    font-size: 30px;
+    margin-top: 280px;
   }
 
   nav {
@@ -658,6 +668,8 @@ nav .fa-solid {
   margin-top: 10px;
   margin-left: -120px;
   }
+
+
 }
 
 /* #image {
